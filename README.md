@@ -58,6 +58,21 @@ This project involves the creation of a powerful FPGA-based calculator with supp
   ├─ /calculator.runs/
   ├─ /calculator.sim/
   └─ /calculator.srcs/
+    ├─ /sources_1/
+    │ ├─ /imports/
+    │ │ └─ /new/
+    │ │   └─ divclk.v
+    │ └─ /new/
+    │   └─ debounce_sw.v
+    │   └─ process.v
+    │   └─ process1.v
+    │   └─ uartsend.v
+    │   └─ uart_send.v
+    │   └─ v1.v
+    │   └─ vga_disp.v
+    │   └─ vga_dri.v
+    │   └─ v_ajxd.v
+    │   └─ v_disp1.v
   ├─ /images/
 
 ```
