@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../input_data.srcs/sources_1/imports/new/divclk.v" \
+"../../../../input_data.srcs/sources_1/new/uart_send.v" \
+"../../../../input_data.srcs/sources_1/new/v_ajxd.v" \
+"../../../../input_data.srcs/sources_1/new/v_disp1.v" \
+"../../../../input_data.srcs/sources_1/new/v1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

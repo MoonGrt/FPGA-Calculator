@@ -1,0 +1,12 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+F:/Study/FPGA/Project/calculator/calculator.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+F:/Study/FPGA/Project/calculator/calculator.srcs/sim_1/new/sim1.v,1680702388,verilog,,,,sim1,,,,,,,,
+F:/Study/FPGA/Project/calculator/calculator.srcs/sim_1/new/sim2.v,1685860258,verilog,,,,sim2,,,,,,,,
+F:/Study/FPGA/Project/calculator/calculator.srcs/sim_1/new/sim_sw.v,1680413616,verilog,,,,sim_sw,,,,,,,,
+F:/Study/FPGA/Project/calculator/calculator.srcs/sim_1/new/sim_uart.v,1680747113,verilog,,,,sim_uart,,,,,,,,
+F:/Study/FPGA/Project/calculator/calculator.srcs/sources_1/new/debounce_sw.v,1680622477,verilog,,F:/Study/FPGA/Project/calculator/calculator.srcs/sim_1/new/sim_sw.v,,debounce_sw,,,,,,,,
+F:/Study/FPGA/Project/calculator/calculator.srcs/sources_1/new/process1.v,1683126067,verilog,,F:/Study/FPGA/Project/calculator/calculator.srcs/sim_1/new/sim1.v,,process1,,,,,,,,
+F:/Study/FPGA/Project/calculator/calculator.srcs/sources_1/new/uart_send.v,1681213832,verilog,,F:/Study/FPGA/Project/calculator/calculator.srcs/sim_1/new/sim_uart.v,,uart_send,,,,,,,,
