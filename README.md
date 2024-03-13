@@ -15,8 +15,7 @@
 	</a>
 <h3 align="center">FPGA_calculator</h3>
 	<p align="center">
-	
-This project involves the creation of a powerful FPGA-based calculator with support for arbitrary arithmetic expressions and parentheses. Users can input mathematical expressions through a keypad, and the FPGA processes and displays the results on a VGA monitor. The calculator is designed for versatility, allowing users to perform a wide range of calculations, including complex operations with parentheses. This hardware-accelerated solution ensures rapid and efficient computation, making it an ideal tool for diverse mathematical applications.
+	This project involves the creation of a powerful FPGA-based calculator with support for arbitrary arithmetic expressions and parentheses. Users can input mathematical expressions through a keypad, and the FPGA processes and displays the results on a VGA monitor. The calculator is designed for versatility, allowing users to perform a wide range of calculations, including complex operations with parentheses. This hardware-accelerated solution ensures rapid and efficient computation, making it an ideal tool for diverse mathematical applications.
 	<br />
 	<a href="https://github.com/MoonGrt/FPGA_calculator"><strong>Explore the docs »</strong></a>
 	<br />
@@ -57,23 +56,23 @@ This project involves the creation of a powerful FPGA-based calculator with supp
   ├─ /calculator.ip_user_files/
   ├─ /calculator.runs/
   ├─ /calculator.sim/
-  └─ /calculator.srcs/
-    ├─ /sources_1/
-    │ ├─ /imports/
-    │ │ └─ /new/
-    │ │   └─ divclk.v
-    │ └─ /new/
-    │   └─ debounce_sw.v
-    │   └─ process.v
-    │   └─ process1.v
-    │   └─ uartsend.v
-    │   └─ uart_send.v
-    │   └─ v1.v
-    │   └─ vga_disp.v
-    │   └─ vga_dri.v
-    │   └─ v_ajxd.v
-    │   └─ v_disp1.v
-  ├─ /images/
+  ├─ /calculator.srcs/
+  │ └─ /sources_1/
+  │   ├─ /imports/
+  │   │ └─ /new/
+  │   │   └─ divclk.v
+  │   └─ /new/
+  │     ├─ debounce_sw.v
+  │     ├─ process.v
+  │     ├─ process1.v
+  │     ├─ uartsend.v
+  │     ├─ uart_send.v
+  │     ├─ v1.v
+  │     ├─ vga_disp.v
+  │     ├─ vga_dri.v
+  │     ├─ v_ajxd.v
+  │     └─ v_disp1.v
+  └─ /images/
 
 ```
 
@@ -100,7 +99,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 MoonGrt - 1561145394@qq.com
-Project Link: [MoonGrt/FPGA_calculator](https://github.com/MoonGrt/FPGA_calculator)
+Project Link: [MoonGrt/](https://github.com/MoonGrt/)
 <p align="right">(<a href="#top">top</a>)</p>
 
 
