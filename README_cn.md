@@ -20,7 +20,6 @@
     <br />
     <a href="https://github.com/MoonGrt/FPGA-Calculator"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
     <a href="https://github.com/MoonGrt/FPGA-Calculator">View Demo</a>
     ·
     <a href="https://github.com/MoonGrt/FPGA-Calculator/issues">Report Bug</a>
