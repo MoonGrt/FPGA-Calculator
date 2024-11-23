@@ -12,7 +12,7 @@
 <br />
 <div align="center">
     <a href="https://github.com/MoonGrt/FPGA-Calculator">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Document/images/logo.png" alt="Logo" width="80" height="80">
     </a>
 <h3 align="center">FPGA-Calculator</h3>
     <p align="center">
@@ -80,7 +80,7 @@
   │     ├─ vga_dri.v
   │     ├─ v_ajxd.v
   │     └─ v_disp1.v
-  └─ /images/
+  └─ /Document/images/
 
 ```
 
@@ -92,9 +92,9 @@
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">本项目基于Xilinx XC7Z010ICLG225 FPGA，设计并实现了一个可以进行带有任意括号的四则运算的计算器。该计算器能够通过UART接口或矩阵按键输入算式，进行计算后通过VGA接口将计算式及其结果展示在VGA屏幕上。</p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">该项目主要由三个模块组成：输入模块（uart、矩阵按键）、计算模块、VGA屏显示模块。整体RTL框图以及最终仿真结果展示如下：</p>
-<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="images/RTL.png" /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="Document/images/RTL.png" /></p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="images/Simulation.png" /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="Document/images/Simulation.png" /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">计算模块是本项目的核心部分，负责对用户输入的四则运算表达式进行处理和计算。整个计算流程通过有限状态机（FSM）进行控制，FSM共有五个状态，分别为：空闲状态、复制状态、处理状态、计算状态和结果状态。</p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">当用户输入完成后，FSM从空闲状态切换到复制状态。在复制状态下，计算模块将用户输入的计算式从寄存器复制到内部存储，以确保后续处理的稳定性。接着进入处理状态，在该状态下，计算模块识别输入表达式中的数字和运算符（如加、减、乘、除），并将连续的数字字符转换为具体的数值，如将字符'4'和'5'组合成数值45。同时，模块利用两个栈结构，将中缀表达式转换为前缀表达式。表达式转换完成后，FSM进入计算状态，在这一阶段，计算模块根据前缀表达式进行运算，依次从栈中读取操作数和运算符，逐步完成表达式的计算。最后，FSM进入结果状态，将计算结果发送到上层模块，并通过VGA显示器将结果展示给用户。</p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">该计算模块通过FSM的有序状态转换，以及利用栈结构实现表达式的解析与计算，有效地解决了括号嵌套及运算优先级等复杂问题，确保了表达式计算的准确性和稳定性。</p></body></html>
@@ -154,7 +154,7 @@
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
+<!-- MARKDOWN LINKS & Document/images -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/MoonGrt/FPGA-Calculator.svg?style=for-the-badge
 [contributors-url]: https://github.com/MoonGrt/FPGA-Calculator/graphs/contributors
