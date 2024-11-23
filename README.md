@@ -12,7 +12,7 @@
 <br />
 <div align="center">
     <a href="https://github.com/MoonGrt/FPGA-Calculator">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Document/images/logo.png" alt="Logo" width="80" height="80">
     </a>
 <h3 align="center">FPGA-Calculator</h3>
     <p align="center">
@@ -81,7 +81,7 @@
   │     ├─ vga_dri.v
   │     ├─ v_ajxd.v
   │     └─ v_disp1.v
-  └─ /images/
+  └─ /Document/images/
 ```
 
 
@@ -92,9 +92,9 @@
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This project, based on the Xilinx XC7Z010ICLG225 FPGA, implements a calculator capable of performing arithmetic operations (addition, subtraction, multiplication, and division) with nested parentheses. The calculator allows users to input expressions via a UART interface or matrix keypad, and it displays the expression and the result on a VGA screen after computation.</p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The project consists of three main modules: input module (uart, matrix keys), calculation module, and VGA screen display module. The overall RTL block diagram and the final simulation results are shown below:</p>
-<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="images/RTL.png" /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="Document/images/RTL.png" /></p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="images/Simulation.png" /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="Document/images/Simulation.png" /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The computation module is the core of this project, responsible for processing and evaluating the arithmetic expressions entered by the user. The entire calculation process is managed through a finite state machine (FSM), which consists of five states: idle, copy, process, compute, and result.</p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Once the user finishes inputting the expression, the FSM transitions from the idle state to the copy state. In this state, the computation module copies the input expression from the external register to its internal storage, ensuring stability for further processing. Next, the FSM moves to the process state, where the module identifies the numbers and operators (e.g., addition, subtraction, multiplication, division) within the expression. It then converts consecutive character digits into numeric values, such as combining '4' and '5' into the number 45. Additionally, the module uses two stacks to convert the infix expression into a prefix expression. After the conversion is complete, the FSM enters the compute state, where the computation module evaluates the prefix expression by sequentially reading operands and operators from the stacks, performing the necessary calculations step by step. Finally, the FSM transitions to the result state, where the calculation result is sent to the upper module and displayed to the user via the VGA screen.</p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Through the FSM's orderly state transitions and the use of stack structures for expression parsing and evaluation, the computation module effectively handles complex issues such as nested parentheses and operator precedence, ensuring the accuracy and stability of expression calculations.</p></body></html>
@@ -150,7 +150,7 @@ Project Link: [MoonGrt/](https://github.com/MoonGrt/)
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
+<!-- MARKDOWN LINKS & Document/images -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/MoonGrt/FPGA-Calculator.svg?style=for-the-badge
 [contributors-url]: https://github.com/MoonGrt/FPGA-Calculator/graphs/contributors
